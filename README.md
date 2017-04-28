@@ -6,3 +6,4 @@ Todo
 - First and second half -> allow substitutions
 - Corners
 - Free kicks
+- Much more
