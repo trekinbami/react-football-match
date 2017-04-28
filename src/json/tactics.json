@@ -1,0 +1,35 @@
+{
+  "defaults": ["4-3-3", "5-3-2"],
+  "all": [
+    {
+      "name": "4-3-3",
+      "positions": ["DOE", "VER", "VER", "VER", "VER", "MID", "MID", "MID", "AAN", "AAN", "AAN"],
+      "off": "8",
+      "def": "4"
+    },
+    {
+      "name": "4-4-2",
+      "positions": ["DOE", "VER", "VER", "VER", "VER", "MID", "MID", "MID", "MID", "AAN", "AAN"],
+      "off": "7",
+      "def": "5"
+    },
+    {
+      "name": "5-3-2",
+      "positions": ["DOE", "VER", "VER", "VER", "VER", "VER", "MID", "MID", "MID", "AAN", "AAN"],
+      "off": "6",
+      "def": "6"
+    },
+    {
+      "name": "5-4-1",
+      "positions": ["DOE", "VER", "VER", "VER", "VER", "VER", "MID", "MID", "MID", "MID", "AAN"],
+      "off": "4",
+      "def": "8"
+    },
+    {
+      "name": "3-4-3",
+      "positions": ["DOE", "VER", "VER", "VER", "MID", "MID", "MID", "MID", "AAN", "AAN", "AAN"],
+      "off": "10",
+      "def": "2"
+    }
+  ]
+}

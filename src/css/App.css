@@ -1,0 +1,310 @@
+
+*,*:before,*:after{ box-sizing: border-box; }
+
+body{
+  background-image:url(http://orig12.deviantart.net/8112/f/2013/362/a/9/football_field_by_mclelun-d6zq8u7.jpg);
+  background-attachment: fixed;
+  background-size:cover;
+  font-family: "Montserrat";
+  font-weight:300;
+  font-size:14px;
+}
+
+.container{
+  padding:25px 7.5%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.right{ text-align: right; }
+.btn{
+  border:0;
+  display:inline-block;
+  background: #1BA39C;
+  margin-bottom:10px;
+  box-shadow: 2px 2px 0 #049372;
+  font-size:14px;
+  color:white;
+  padding: 10px 25px;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+}
+.btn:active{ box-shadow:none; top:2px; }
+
+.blocks{
+  display: flex;
+}
+
+.player-block{
+  flex:1;
+}
+
+
+
+.player-list{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.player-list .player-drag{
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color:#ddd;
+  cursor:pointer;
+  box-shadow:none;
+}
+.player-list{ flex:1; }
+.player-list li:first-child{ margin-left:0; }
+.player-list li:last-child{ border-bottom:1px solid #ddd; }
+
+.player-drag{
+  border: 1px solid #ddd;
+  list-style: none;
+  box-shadow:1px 2px 2px rgba(0,0,0,0.2);
+  background:rgba(255,255,255,0.90);
+  display: flex;
+  align-items:stretch;
+  height:40px;
+}
+  .player-drag span{
+    align-items: center;
+    text-align: center;
+    padding:10px;
+  }
+
+  .player-drag .name{
+    flex:1;
+    text-align: left;
+    display: flex;
+    align-items:center;
+  }
+
+  .player-drag .position{
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    width:55px;
+    // font-size:10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  .player-drag .rating{
+    width:45px;
+  }
+
+  .list-container{
+    display: flex;
+  }
+
+  .list-container__list{
+    margin:0;
+    padding:0;
+    list-style: none;
+  }
+    .list-container__list li{
+      height:40px;
+      display: flex;
+      padding:0 10px;
+      background:#ddd;
+      align-items:center;
+      justify-content: center;
+    }
+
+    .list-container__list li:nth-child(-n+11){
+      font-weight:bold;
+      // font-size:10px;
+    }
+
+    .list-container__list li.wissel{ background:#eee; }
+
+.team-header{
+  display: flex;
+  justify-content: space-between;
+  padding:10px 0;
+}
+
+.team-att{ display: flex; align-items:center;}
+.team-att strong{ margin-right:5px; }
+
+.blocks .player-block:first-of-type{ order:0; }
+
+.blocks .score-board{
+  order:1;
+  display: flex;
+  justify-content: center;
+  margin:0 25px;
+}
+  .blocks .score{
+    background:white;
+    padding:10px;
+    box-shadow:2px 2px 4px rgba(0,0,0,0.2);
+    position: relative;
+    padding:40px 50px;
+    width:350px;
+    display: flex;
+    border-radius: 3px 3px 0 0;
+    justify-content: center;
+  }
+
+  .blocks .score.result{
+    width:450px;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .blocks .score:before{
+    content:"";
+    border:1px solid #ddd;
+    width:calc(100% - 20px);
+    height:calc(100% - 20px);
+    position: absolute;
+    top:10px;
+    left:10px;
+  }
+
+  .score-cnt{
+    flex-basis:calc(50% - 50px);
+  }
+
+  .score .score-cnt.left{
+    margin-right:25px;
+    text-align: right;
+  }
+
+  .score .score-cnt.right{
+    margin-left:25px;
+    text-align: left;
+  }
+
+  .score .score-cnt.left .score-cnt__name{text-align: right;}
+  .score .score-cnt.right .score-cnt__name{text-align: left;}
+  .score .score-cnt.left .score-cnt__score{ float:right; }
+
+  .score-cnt__name{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size:12px;
+    font-weight: bold;
+    flex-basis: 100%;
+    margin-bottom:5px;
+  }
+
+  .score-cnt__score{
+    background:#2C3E50;
+    color:white;
+    width:75px;
+    height:75px;
+    display: flex;
+    align-items:center;
+    font-size:48px;
+    justify-content: center;
+    border-radius: 3px;
+  }
+
+.blocks .player-block:last-of-type{ order:2; }
+
+.btn{
+  width:100%;
+  font-family: inherit;
+}
+
+.team-header{
+  background:white;
+  color:white;
+  padding:10px 10px;
+  color:#2C3E50;
+}
+
+.player-block h2{
+  margin:0;
+  padding:1em 10px;
+  background:#1BA39C;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+  text-align: center;
+  color:#2C3E50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size:18px;
+  color:white;
+}
+
+.player-block h2:before{
+  position: absolute;
+  top:10px;
+  left:10px;
+  content: "";
+  border:1px solid #ddd;
+  // border-width:1px 1px 0 1px;
+  // border-style: solid;
+  width:calc(100% - 20px);
+  height:calc(100% - 20px);
+  display: none;
+}
+
+.goal-scorers{
+  list-style: none;
+  margin:0 0 0 0;
+  padding:20px 0 0 0;
+  clear:both;
+}
+.goal-scorers.left{ text-align: left;}
+.goal-scorers.right{ text-align: right;}
+
+.goal-scorers li{
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size:12px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom:9px;
+}
+
+  .goal-scorers li:before{
+    content:"";
+    background-image: url(http://www.freeiconspng.com/uploads/sport-activities-football-icon-6.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height:13px;
+    width:13px;
+    background-size:cover;
+    top:1px;
+  }
+
+  .goal-scorers.left li:before{ left:0; }
+  .goal-scorers.right li:before{ right:0; }
+
+  .goal-scorers.left li{ padding-left: 20px; }
+  .goal-scorers.right li{ padding-right: 20px; }
+
+  .minute{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .goal-scorers.right .minute:after{left:-5px; right:auto;}
+
+  .minute:after{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    content:"";
+    width:20px;
+    height:20px;
+    border-radius: 20px;
+    background:#EEE;
+    right:-5px;
+    z-index: 0;
+  }
+
+  .minute span{ position: relative; z-index: 1; }
+  .goal-scorers.left .minute{ right:0; }
+  .goal-scorers.right .minute{ left:0; }

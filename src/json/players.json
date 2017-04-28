@@ -1,0 +1,173 @@
+[
+  {
+    "country": "Spanje",
+    "players": [
+      {
+        "name": "Iker Cassilas",
+        "rating": "79",
+        "position": "Keeper"
+      },
+      {
+        "name": "David de Gea",
+        "rating": "79",
+        "position": "Keeper"
+      },
+      {
+        "name": "Gerard Pique",
+        "rating": "89",
+        "position": "Verdediger"
+      },
+      {
+        "name": "Sergio Ramos",
+        "rating": "89",
+        "position": "Verdediger"
+      },
+      {
+        "name": "Jordi Alba",
+        "rating": "89",
+        "position": "Verdediger"
+      },
+      {
+        "name": "Hector Bellerin",
+        "rating": "89",
+        "position": "Verdediger"
+      },
+      {
+        "name": "Juanfran",
+        "rating": "89",
+        "position": "Verdediger"
+      },
+      {
+        "name": "Andres Iniesta",
+        "rating": "92",
+        "position": "Middenvelder"
+      },
+      {
+        "name": "Cesc Fabregas",
+        "rating": "92",
+        "position": "Middenvelder"
+      },
+      {
+        "name": "David Silva",
+        "rating": "92",
+        "position": "Middenvelder"
+      },
+      {
+        "name": "Sergio Busquets",
+        "rating": "92",
+        "position": "Middenvelder"
+      },
+      {
+        "name": "Thiago Alcantara",
+        "rating": "92",
+        "position": "Middenvelder"
+      },
+      {
+        "name": "Nolito",
+        "rating": "85",
+        "position": "Aanvaller"
+      },
+      {
+        "name": "Alvaro Morata",
+        "rating": "87",
+        "position": "Aanvaller"
+      },
+      {
+        "name": "Aritz Aduriz",
+        "rating": "87",
+        "position": "Aanvaller"
+      },
+      {
+        "name": "Pedro",
+        "rating": "87",
+        "position": "Aanvaller"
+      }
+    ]
+  },
+  {
+    "country": "Nederland",
+    "players": [
+      {
+        "name": "Jeroen Zoet",
+        "rating": "79",
+        "position": "Keeper"
+      },
+      {
+        "name": "Jasper Cillessen",
+        "rating": "79",
+        "position": "Keeper"
+      },
+      {
+        "name": "Stefan de Vrij",
+        "rating": "75",
+        "position": "Verdediger"
+      },
+      {
+        "name": "Jetro Willems",
+        "rating": "75",
+        "position": "Verdediger"
+      },
+      {
+        "name": "Daley Blind",
+        "rating": "75",
+        "position": "Verdediger"
+      },
+      {
+        "name": "Terence Kongolo",
+        "rating": "75",
+        "position": "Verdediger"
+      },
+      {
+        "name": "Virgil van Dijk",
+        "rating": "75",
+        "position": "Verdediger"
+      },
+      {
+        "name": "Georginio Wijnaldum",
+        "rating": "82",
+        "position": "Middenvelder"
+      },
+      {
+        "name": "Kevin Strootman",
+        "rating": "84",
+        "position": "Middenvelder"
+      },
+      {
+        "name": "Wesley Sneijder",
+        "rating": "84",
+        "position": "Middenvelder"
+      },
+      {
+        "name": "Davy Propper",
+        "rating": "84",
+        "position": "Middenvelder"
+      },
+      {
+        "name": "Davy Klaassen",
+        "rating": "84",
+        "position": "Middenvelder"
+      },
+      {
+        "name": "Vincent Janssen",
+        "rating": "79",
+        "position": "Aanvaller"
+      },
+      {
+        "name": "Bas Dost",
+        "rating": "83",
+        "position": "Aanvaller"
+      },
+      {
+        "name": "Luuk de Jong",
+        "rating": "83",
+        "position": "Aanvaller"
+      },
+      {
+        "name": "Quincy Promes",
+        "rating": "83",
+        "position": "Aanvaller"
+      }
+
+    ]
+  }
+]
