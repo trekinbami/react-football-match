@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
-import { createAfkorting, calculateChemistry } from '../Helpers';
+import { createAfkorting, calculateChemistry } from '../helpers';
 import {SortableContainer, SortableElement, arrayMove} from 'react-sortable-hoc';
 
 const SortableItem = SortableElement(({value}) => {
@@ -28,6 +28,12 @@ const SortableList = SortableContainer(({players, positions}) => {
 });
 
 class PlayerList extends Component {
+  constructor() {
+    super();
+    this.handleChemistry = this.handleChemistry.bind(this);
+    this.onSortEnd = this.onSortEnd.bind(this);
+  }
+
   componentWillMount(){
     const { playerList, side } = this.props;
     this.props.movePlayers(playerList, side);
@@ -50,7 +56,7 @@ class PlayerList extends Component {
     return (
       <SortableList
         players={this.props.selectedPlayers[this.props.side]}
-        onSortEnd={this.onSortEnd.bind(this)}
+        onSortEnd={this.onSortEnd}
       />
     )
   }

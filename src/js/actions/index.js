@@ -8,7 +8,7 @@ import {
 } from '../actions/types';
 
 import tactics from '../../json/tactics.json';
-import { calculateChemistry } from '../Helpers';
+import { calculateChemistry } from '../helpers';
 
 function getPositionsFromTactic(tactic){
   return tactics.all.find(tac => tactic === tac.name);
